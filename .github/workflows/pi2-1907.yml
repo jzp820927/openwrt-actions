@@ -5,11 +5,11 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-name: X64-1907
+name: Pi2-1907
 
 on:
-  schedule:
-    - cron: 0 20 * * *
+#  schedule:
+#    - cron: 0 20 * * *
   push:
     branches: 
       - master
@@ -46,7 +46,7 @@ jobs:
       run: |
           cd openwrt
           rm -f .config
-          cp ../x64-1907 .config
+          cp ../pi2-1907 .config
 
     - name: Make download
       run: |
