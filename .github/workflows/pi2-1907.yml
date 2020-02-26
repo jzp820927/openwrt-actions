@@ -73,7 +73,7 @@ jobs:
           mkdir -p ./artifact/
           ls -al openwrt/bin/targets/brcm2708
           ls -al openwrt/bin/targets/brcm2708/brcm2709
-	  find openwrt/bin/targets/ -name "*"
+          find openwrt/bin/targets/ -name "*"
           find openwrt/bin/targets/ -name "*sysupgrade*bin*" | xargs -i mv -f {} ./artifact/
           find openwrt/bin/targets/ -name "*combined*img*" | xargs -i mv -f {} ./artifact/
           ls -al ./artifact/
