@@ -5,7 +5,7 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-name: Pi2-1907
+name: Pi2-Lienol
 
 on:
 #  schedule:
@@ -46,7 +46,7 @@ jobs:
       run: |
           cd openwrt
           rm -f .config
-          cp ../pi2-1907 .config
+          cp ../Pi2-Lienol .config
           sed -i 's/^[ \t]*//g' .config
 #          make defconfig
 
